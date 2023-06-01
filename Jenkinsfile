@@ -8,7 +8,7 @@ agent any
 		{
 			steps
 			{
-            		git branch: 'main', url: 'https://github.com/mrnithinthomas/CI-CD-Project-for-Launching-a-Webapp.git'
+            		git branch: 'main', url: 'https://github.com/mrnithinthomas/testpojectx.git'
 			}
 		}
 		stage('Maven Build')
@@ -81,8 +81,7 @@ agent any
 						//sh "kubectl apply -f manifest.yaml"
                        				sh "kubectl apply -f projectx-pod.yaml"
 						sh "kubectl apply -f projectx-service.yaml"
-						sh "minikube start"
-						sh "minikube service -- projectx-pod"
+						
                     				} 
 					else 
 						{
@@ -91,8 +90,7 @@ agent any
 						//sh "kubectl apply -f manifest.yml"
 						sh "kubectl apply -f projectx-pod.yaml"
 						sh "kubectl apply -f projectx-service.yaml"	
-						sh "minikube start"
-						sh "minikube service -- projectx-pod"
+						
                     				}
                         		}
 				}
