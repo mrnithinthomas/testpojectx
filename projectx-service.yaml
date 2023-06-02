@@ -7,7 +7,7 @@ metadata:
 spec:
   ports:
     - port: 8080 # The port that the service is running on in the cluster
-      targetPort: 8050 # The port exposed by the service
+      targetPort: 8080 # The port exposed by the service
       protocol: TCP
       nodePort: 31000
   selector:
